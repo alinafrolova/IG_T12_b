@@ -18,7 +18,7 @@ import static ch.lambdaj.Lambda.convert;
  * Created by Frolova.A on 4/28/15.
  */
 
-@DefaultUrl("https://ui61.maxymiser.com/Admin/account-igame/529/site-igame-com/438/ActionLog")
+@DefaultUrl("")
 public class AdminPages extends PageObject {
     private WebDriver driver;
     private String adminCamp,checkCamp,baseUrl,m;
@@ -26,7 +26,7 @@ public class AdminPages extends PageObject {
     @Before
     public void setUp(){
 
-        adminCamp = "https://ui61.maxymiser.com/Admin/account-igame/529/site-igame-com/438/ActionLog";
+        adminCamp = "";
 
     }
     @FindBy(id = "Login")
@@ -126,7 +126,7 @@ public class AdminPages extends PageObject {
 
     }
     public void openActionLog() {
-        getDriver().get("https://ui61.maxymiser.com/Admin/account-igame/529/site-igame-com/438/ActionLog/AjaxLoadGrid?configType=Sandbox&ipCategory=OWN_IP&_");
+        getDriver().get("");
     }
     /////////////////////////////////////////////////////////////////////////////////////////////
     public void closeDriver(){
